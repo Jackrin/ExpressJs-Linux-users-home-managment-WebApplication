@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+    <title>.</title>
+	<meta charset="UTF-8">
+	<meta name="csrf-token" content="<%= token %>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="login.js"></script>
+    <script src="interface.js"></script>
+    <script src="customContextMenu.js"></script>
+    <script src="fileTypes.js"></script>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="interface.css">
+    <link rel="stylesheet" type="text/css" href="files.css">
+    <link rel="stylesheet" type="text/css" href="buttons.css">
+    <link rel="stylesheet" type="text/css" href="customContextMenu.css">
+    <link rel="stylesheet" type="text/css" href="pacman.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+ 
+	<body>
+		<div class="interfaceContainer" id="interfaceContainer">
+			<div class="contextMenu" id="contextMenu">
+				<button class="newFolder" id="newFolder">New folder</button><br>
+				<button class="newFile" id="newFile">New file</button>
+				<button class="uploadButton" id="uploadButton">Upload file</button>
+				<form class="upload" id="uploadForm">
+					<input class="upload" id="uploadInput" type="file" name="upload" multiple>
+					<input class="upload" type="submit" id="uploadSubmit">
+				</form>
+			</div>
+			<div class="contextMenu2" id="contextMenu2">
+				<button class="rename" id="rename">Rename</button><br>
+				<button class="delete" id="delete">Delete</button><br>
+				<button class="info" id="info">Info</button>
+				<button class="download" id="download">Download</button>
+			</div>
+		  	<div class="interfaceDiv" id="interfaceDiv"> 
+		  		<div class="leftBar" id="leftBar">
+		  		</div>
+		  		<div class="topBar" id="topBar">
+					<button class="back" id="back">Back</button>
+					<input type="search" class="searchBar" id="searchBar" placeholder="Search">
+					<div class="sort" id="sort"><img class="sortImg" id="sortImg" src="sort.png"></div>
+					<div class="sortMenu" id="sortMenu" style="display: none;">
+						<span style="padding-bottom: 6%; padding-left: 41%; width: 2em; margin-top: 2%;" >Sort</span><br>
+						<span>A-Z</span><input name="sort" type="radio" class="sortCheck" id="sort0" checked><br><br>
+						<span>Z-A</span><input name="sort" type="radio" class="sortCheck" id="sort1"><br><br>
+						<span>Last Modified</span><input name="sort" type="radio" class="sortCheck" id="sort2"><br><br>
+						<span>First Modified</span><input name="sort" type="radio" class="sortCheck" id="sort3"><br><br>
+						<span>Size</span><input name="sort" type="radio" class="sortCheck" id="sort4"><br><br>
+					</div>
+					<button class="logout" id="logout">Logout</button>
+		  		</div>
+		  		<div class="explorer" id="explorer">
+		  			<div class="visualizer" id="visualizer">
+		  				<span class="visualizerSpan" id="visualizerSpan"></span>
+		  				<button class="visualizerClose" id="visualizerClose">Close</button>
+		  				<textarea class="visualizerText" id="visualizerText"></textarea>
+		  			</div>
+		  		</div>
+		  	</div>
+				<div class="backgroundDiv" id="backgroundDiv">
+					<button class="switchRegister" id="switchRegister">CREATE USER</button>
+					<button class="switchLogin" id="switchLogin">LOGIN</button>
+					<div class="registerFormDiv" id="registerFormDiv">
+						<pre><span>Allowed Username characters: (a-z),(0-9),( _ ),( - )<br>Only ( _ ) can be used as first special character<br>Max Username length: 32 | Min Password length: 8</span></pre>
+				    	<form id="registerForm" autocomplete="off" class="registerForm">
+			  				<input type="text" placeholder="Username" name="username" id="registerUsername" class="username"><br>
+			  				<input type="password" placeholder="Password" name="password" id="registerPassword" class="password"><br>
+			  				<input type="password" placeholder="Confirm password" name="password" id="confirmPassword" class="confirmPassword"><br>
+			  				<button type="submit" id="registerSubmit" class="registerSubmit">Register</button>
+				   		</form>
+			    	</div>
+			    	<div class="loginFormDiv" id="loginFormDiv">
+				    	<form id="loginForm" autocomplete="off" class="loginForm">
+			  				<input type="text" placeholder="Username" name="username" id="username" class="username"><br>
+			  				<input type="password" placeholder="Password" name="password" id="password" class="password"><br>
+			  				<button type="submit" id="Submit" class="loginSubmit">Login</button>
+				   		</form>
+			    	</div>
+		    	</div>
+		    </div>
+		</div>
+	</body>
+</html>

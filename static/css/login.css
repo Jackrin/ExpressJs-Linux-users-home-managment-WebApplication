@@ -1,0 +1,225 @@
+html, body {
+	width: 100%;
+  	height: 100%;
+  	margin: 0;
+  	padding: 0;
+  	background-color: #25282A;
+  	font-family: 'Roboto', sans-serif;
+  	-webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    user-select: none;
+    overflow: hidden;
+  }
+
+.interfaceContainer {
+	height: 100%;
+	background-color: #25282A;
+}
+
+.backgroundDiv {
+	height: 100%;
+	background-color: black;
+	z-index: 2;
+	position: relative;
+	top: -2%;
+}
+
+.loginFormDiv {
+	position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20em;
+    width: 20em;
+}
+
+.loginForm {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.username {
+	border-radius: 2px;
+	margin-bottom: 2%;
+	height: 3em;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #0000;
+	color: #ffffff;
+	transition: 0.3s;
+	padding-left: 1em;
+	text-transform: lowercase;
+}
+
+.password {
+	border-radius: 2px;
+	margin-bottom: 2%;
+	height: 3em;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #0000;
+	color: #ffffff;
+	transition: 0.3s;
+	padding-left: 1em;
+}
+
+.username::placeholder, .password::placeholder, .confirmPassword::placeholder{
+	font-size: 110%;
+	padding-left: 1em;
+}
+
+.loginSubmit {
+	border-radius: 2px;
+	height: 2.2em;
+	width: 100%;
+	font-size: 110%;
+	border-style: solid;
+	border-width: 1px;
+	background: none;
+	margin:0px;
+    padding:0px;
+    color: #ffffff;
+    transition: 0.1s;
+}
+
+.loginSubmit::-moz-focus-inner {
+   	border: 0;
+}
+
+.username:focus, .password:focus, .confirmPassword:focus{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.loginSubmit:hover{
+	background-color: #ffffff;
+	color: #000000;
+	transition: 0.3s;
+}
+
+.loginSubmit:active{
+	background-color: #cacaca;
+	color: #000000;
+}
+
+.switchLogin {
+	position: relative;
+	border-radius: 2px;
+	height: 2.5em;
+	width: 7em;
+	font-size: 100%;
+	border-style: solid;
+	border-width: 1px;
+	background: none;
+	margin:0px;
+    padding: 0;
+    color: #ffffff;
+    transition: 0.1s;
+    float: right;
+    right: -25%;
+	top: 2%;
+}
+
+.switchLogin::-moz-focus-inner{
+   	border: 0;
+}
+
+.switchLogin:hover{
+	background-color: #ffffff;
+	color: #000000;
+	transition: 0.3s;
+}
+
+.switchLogin:active{
+	background-color: #cacaca;
+	color: #000000;
+}
+
+/*Registration*/
+
+.registerFormDiv {
+	position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20em;
+    width: 20em;
+  	top: -20%;
+  	font-size: 100%;
+  	text-align: center;
+}
+
+.registerForm {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.switchRegister {
+	position: relative;
+	border-radius: 2px;
+	height: 2.5em;
+	width: 7em;
+	font-size: 100%;
+	border-style: solid;
+	border-width: 1px;
+	background: none;
+	margin:0px;
+    padding: 0;
+    color: #ffffff;
+    transition: 0.1s;
+    float: right;
+    right: 2%;
+	top: 2%;
+}
+
+.switchRegister::-moz-focus-inner, .registerSubmit::-moz-focus-inner {
+   	border: 0;
+}
+
+.switchRegister:hover, .registerSubmit:hover{
+	background-color: #ffffff;
+	color: #000000;
+	transition: 0.3s;
+}
+
+.switchRegister:active, .registerSubmit:active{
+	background-color: #cacaca;
+	color: #000000;
+}
+
+.confirmPassword {
+	border-radius: 2px;
+	margin-bottom: 2%;
+	height: 3em;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #0000;
+	color: #ffffff;
+	transition: 0.3s;
+	padding-left: 1em;
+}
+
+.registerSubmit {
+	border-radius: 2px;
+	height: 2.2em;
+	width: 100%;
+	font-size: 110%;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #0000;
+	margin:0px;
+    padding:0px;
+    color: #ffffff;
+    transition: 0.1s;
+}
+
+.registerFormDiv span {
+	color: #ffffff;
+	font-size: 70%;
+	width: 100%
+	white-space: pre-wrap;
+}

@@ -1,0 +1,82 @@
+
+.fileWrapper {
+	height: 6.5em;
+	width: 6.5em;
+	float: left;
+	margin-top: 0.5%;
+}
+
+.fileName span:hover{
+	filter: brightness(130%);
+}
+
+.fileName {
+	position: relative;
+	z-index: 10;
+	height: 2.1em;
+	width: 6.5em;
+	top: 4.8em;
+	text-align: center;
+
+}
+
+.fileName span {
+	color: #C3BFB6;
+	position: absolute;
+	cursor: default;
+	word-break: break-all;
+	outline: none;
+	width: 5em;
+	text-align: center;
+	left: 12%;
+	height: 1.95em;
+	resize: none;
+	background: none;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	outline: none;
+	overflow: hidden;
+	line-height: 0.96;
+	-moz-box-orient: vertical;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+}
+
+.file {
+	background-size: contain;
+	height: 4em;
+	float: left;
+	padding: 1.8%;
+	text-align: center;
+	filter: brightness(100%);
+	z-index: 4;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 17%;
+}
+
+.file img {
+	width: 3.4em;
+}
+
+.file img:hover ~ #fileName span{
+	filter: brightness(130);
+}
+
+.file img:hover{
+	filter: brightness(130%);
+}
+
+
+.pwd {
+	position: absolute;
+	font-size: 90%;
+	width: 100%;
+	color: #DDD;
+	left: 0.5%;
+}
+
+.fileSelected {
+	filter: brightness(130%);
+}

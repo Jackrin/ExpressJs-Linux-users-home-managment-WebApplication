@@ -1,0 +1,53 @@
+.pacman {
+  margin:40px 10px;
+  position: absolute;
+  z-index:999;
+  left: -10%;
+  width: 8%;
+}
+
+.pacman-top {
+  background-color: yellow;
+  height: 3em;
+  width: 6em;
+  border-radius: 100px 100px 0 0;
+  animation: spin1 0.3s infinite linear;
+}
+
+.pacman-bottom {
+  background-color: yellow;
+  height: 3em;
+  width: 6em;
+  border-radius: 0 0 100px 100px;
+  animation: spin2 0.3s infinite linear;
+}
+
+@keyframes spin1 {
+  0%  {transform: rotate(0deg);}
+  50%{transform: rotate(-35deg);}
+  
+}
+@keyframes spin2 {
+  0%  {transform: rotate(0deg);}
+  50%{transform: rotate(35deg);}  
+}
+
+@-moz-keyframes spin1 {
+  0%  {transform: rotate(0deg);}
+  50%{transform: rotate(-35deg);}
+  
+}
+@-moz-keyframes spin2 {
+  0%  {transform: rotate(0deg);}
+  50%{transform: rotate(35deg);}  
+}
+
+@-webkit-keyframes spin1 {
+  0%  {transform: rotate(0deg);}
+  50%{transform: rotate(-35deg);}
+  
+}
+@-webkit-keyframes spin2 {
+  0%  {transform: rotate(0deg);}
+  50%{transform: rotate(35deg);}  
+}

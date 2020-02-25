@@ -1,0 +1,110 @@
+.back {
+	position: relative;
+	background: none;
+	color:#DDD;
+	font-size: 1.2em;
+	width: 5em;
+	border-radius: 3%;
+	margin: 0.5%;
+	border-width: 0.1em;
+	border-color:#DDD;
+	transition: 0.1s;
+	border-style: solid;
+	padding:0
+}
+
+.back:hover {
+	filter: brightness(200%);
+}
+
+.back::-moz-focus-inner{
+   	border: 0;
+}
+
+.searchBar {
+	position: relative;
+	background: none;
+	color:#DDD;
+	font-size: 1.2em;
+	width: 25%;
+	border-radius: 3%;
+	margin: 0.5%;
+	border-width: 0.1em;
+	border-color:#DDD;
+	transition: 0.1s;
+	border-style: solid;
+	padding-left: 1%;
+	margin-left: 20%;
+}
+
+.sort {
+	transition: 0.1s;
+	margin: 0.5%;
+	text-align: center;
+	width: 4%;
+	border-radius: 0.1em;
+}
+
+.sort img {
+	width: 80%;
+	height: 70%;
+	position: relative;
+	top: 15%;
+}
+
+.sort:hover {
+	filter: brightness(130%);
+}
+
+.sortMenu {
+	background: #181A1B;
+	height: 400%;
+	width: 15%;
+	top: 95%;
+	position: absolute;
+	left: 51.5%;
+	box-shadow: 0px 0px 5px 0px
+	rgba(0,0,0,0.75);
+	color:#DDD;
+	z-index: 999;
+}
+
+.sortMenu span {
+	width: 80%;
+    display: inline-block;
+    padding-left: 4%;
+
+}
+
+.sortMenu input:focus {
+	outline: 0;
+}
+
+.searchBar:focus {
+	filter: brightness(200%);
+}
+
+.logout {
+	position: relative;
+	background: none;
+	color:#DDD;
+	font-size: 1.2em;
+	width: 5em;
+	border-radius: 3%;
+	margin: 0.5%;
+	border-width: 0.1em;
+	border-color:#DDD;
+	transition: 0.1s;
+	border-style: solid;
+	padding: 0;
+	left: 29%;
+}
+
+.logout:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.logout::-moz-focus-inner{
+   	border: 0;
+}

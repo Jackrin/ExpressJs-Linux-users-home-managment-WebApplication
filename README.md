@@ -14,3 +14,6 @@ It allows the creation of a user on the linux machine and then gives access to t
 - Integrated text editor for text files.
 - Search bar and sort filters.
 
+## Technologies used
+- Node.js as backend and Express.js as framwork.
+- Jquery as the only frontend library; I didn't used any frontend frameworks but still obtained a clean and modern interface.
